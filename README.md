@@ -1,6 +1,6 @@
 # 🌾 Agronet – Bridging Farmers and Businesses
 
-Agronet is a modern AgriTech Marketplace platform that connects **farmers**, **business buyers**, and **logistics partners** to enable efficient, transparent, and affordable agricultural trade across regions.
+Agronet is an AgriTech Marketplace platform that connects **farmers**, **business buyers**, and **logistics partners** to enable efficient, transparent, and affordable agricultural trade across regions.
 
 ---
 
@@ -26,10 +26,9 @@ Agronet is a modern AgriTech Marketplace platform that connects **farmers**, **b
 - [Shadcn UI](https://ui.shadcn.com/) (for UI components)
 
 ### 🔹 Backend
-- [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/) OR [NestJS](https://nestjs.com/)
-- [MongoDB](https://www.mongodb.com/) (Mongoose or Prisma)
+- [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/) 
+- [MongoDB](https://www.mongodb.com/) 
 - [JWT](https://jwt.io/) for authentication
-- [Cloudinary](https://cloudinary.com/) or AWS S3 for media uploads
 
 ---
 
