@@ -7,19 +7,19 @@ export default function SignupPage() {
     return (
         <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
             {/* Left section */}
-            <div className="bg-green-50 flex flex-col items-center justify-center text-center p-10">
+            <div className="bg-green-50 flex flex-col items-center justify-center text-center p-16">
                 <motion.img
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     src="/images/left-banner.png"
                     alt="Drone over field"
-                    className="w-80 shadow-xl rounded-md"
+                    className="w-96 shadow-xl rounded-md"
                 />
-                <h2 className="text-2xl font-semibold mt-6">Agronet</h2>
-                <p className="text-sm text-gray-600 mt-2 max-w-md">
+                <h2 className="text-3xl font-bold mt-8">AgriTech Marketplace</h2>
+                <p className="text-lg text-gray-600 mt-4 max-w-xl">
                     Connect, trade, and grow with our innovative platform designed specifically for the agricultural community.
                 </p>
-                <div className="mt-4 flex gap-4 text-sm text-green-700 font-medium">
+                <div className="mt-6 flex gap-6 text-lg text-green-700 font-medium">
                     <span>✅ Sustainable</span>
                     <span>✅ Trusted</span>
                     <span>✅ Organic</span>
@@ -27,37 +27,37 @@ export default function SignupPage() {
             </div>
 
             {/* Right section */}
-            <div className="bg-white p-10 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold text-center">Create Your Account</h2>
-                <p className="text-sm text-center text-gray-500 mb-6">Join our community of agricultural professionals</p>
+            <div className="bg-white p-16 flex flex-col justify-center">
+                <h2 className="text-4xl font-bold text-center mb-4">Create Your Account</h2>
+                <p className="text-lg text-center text-gray-500 mb-10">Join our community of agricultural professionals</p>
 
-                <div className="mb-4">
-                    <label className="block text-sm font-medium mb-2">Select your role:</label>
-                    <div className="grid grid-cols-3 gap-2">
-                        <button className="p-8 bg-green-600 text-white rounded-md flex flex-col items-center">
-                            <Tractor size={30} />
-                            <span className="text-xl mt-1">Farmer</span>
+                <div className="mb-6">
+                    <label className="block text-lg font-medium mb-4">Select your role:</label>
+                    <div className="grid grid-cols-3 gap-4">
+                        <button className="p-6 bg-green-600 text-white rounded-lg flex flex-col items-center">
+                            <Tractor size={28} />
+                            <span className="text-lg mt-2">Farmer</span>
                         </button>
-                        <button className="p-8 border rounded-md flex flex-col items-center">
-                            <Briefcase size={30} />
-                            <span className="text-xl mt-1">Business Buyer</span>
+                        <button className="p-6 border rounded-lg flex flex-col items-center">
+                            <Briefcase size={28} />
+                            <span className="text-lg mt-2">Business Buyer</span>
                         </button>
-                        <button className="p-8 border rounded-md flex flex-col items-center">
-                            <Truck size={30} />
-                            <span className="text-xl mt-1">Logistics Partner</span>
+                        <button className="p-6 border rounded-lg flex flex-col items-center">
+                            <Truck size={28} />
+                            <span className="text-lg mt-2">Logistics Partner</span>
                         </button>
                     </div>
                 </div>
 
-                <form className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input className="border p-2 rounded" type="text" placeholder="Full Name" />
-                        <input className="border p-2 rounded" type="email" placeholder="Email" />
+                <form className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input className="border p-4 rounded text-lg" type="text" placeholder="Full Name" />
+                        <input className="border p-4 rounded text-lg" type="email" placeholder="Email" />
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input className="border p-2 rounded" type="text" placeholder="Phone Number" />
-                        <select className="border p-2 rounded">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input className="border p-4 rounded text-lg" type="text" placeholder="Phone Number" />
+                        <select className="border p-4 rounded text-lg">
                             <option>Select your region</option>
                             <option>North</option>
                             <option>South</option>
@@ -66,28 +66,28 @@ export default function SignupPage() {
                         </select>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input className="border p-2 rounded" type="password" placeholder="Password" />
-                        <input className="border p-2 rounded" type="password" placeholder="Confirm Password" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input className="border p-4 rounded text-lg" type="password" placeholder="Password" />
+                        <input className="border p-4 rounded text-lg" type="password" placeholder="Confirm Password" />
                     </div>
 
-                    <input className="border p-2 rounded w-full" type="number" placeholder="Farm Size (acres)" />
+                    <input className="border p-4 rounded w-full text-lg" type="number" placeholder="Farm Size (acres)" />
 
-                    <select multiple className="border p-2 rounded w-full h-24">
+                    <select multiple className="border p-4 rounded w-full h-32 text-lg">
                         <option>Corn</option>
                         <option>Wheat</option>
                         <option>Soybeans</option>
                         <option>Vegetables</option>
                     </select>
 
-                    <div className="flex items-start gap-2 text-sm">
-                        <input type="checkbox" />
+                    <div className="flex items-start gap-4 text-base">
+                        <input type="checkbox" className="mt-1" />
                         <span>I agree to the <a className="text-green-600 underline" href="#">Terms of Service</a> and <a className="text-green-600 underline" href="#">Privacy Policy</a></span>
                     </div>
 
-                    <button className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Sign Up</button>
+                    <button className="w-full bg-green-600 text-white py-3 text-lg rounded hover:bg-green-700">Sign Up</button>
 
-                    <p className="text-center text-sm text-gray-500">
+                    <p className="text-center text-base text-gray-500">
                         Already have an account? <a href="#" className="text-green-600 font-medium">Login</a>
                     </p>
                 </form>
