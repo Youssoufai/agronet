@@ -22,7 +22,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="relative z-10 flex flex-col justify-center h-full max-w-6xl mx-auto px-6 md:px-12 py-4"
+                className="relative z-10 flex flex-col justify-center h-[90%] max-w-6xl mx-auto px-6 md:px-12 md:py-4 pb-16"
             >
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
                     Agronet — Bridging Farmers and Businesses for a Healthier Future
