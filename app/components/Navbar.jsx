@@ -40,7 +40,7 @@ export default function Navbar() {
                     Sign In
                 </Link>
                 <Link
-                    href="/get-started"
+                    href="/sign-up"
                     className="bg-green-700 text-white px-5 py-2 rounded-lg hover:bg-green-800 transition"
                 >
                     Get Started
