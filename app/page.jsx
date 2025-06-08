@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import JoinCTA from "./components/JoinCTA";
@@ -14,6 +15,7 @@ export default function Home() {
       <HowItWorks />
       <MarketplaceShowcase />
       <JoinCTA />
+      <Footer />
     </>
   );
 }
