@@ -9,13 +9,11 @@ import WhyChooseAgronet from "./components/WhyChoose";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <WhyChooseAgronet />
       <HowItWorks />
       <MarketplaceShowcase />
       <JoinCTA />
-      <Footer />
     </>
   );
 }
